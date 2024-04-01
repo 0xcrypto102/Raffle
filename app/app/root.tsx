@@ -190,19 +190,19 @@ function Layout({ children }: PropsWithChildren) {
                 </Link>
               </NavbarMenuItem>
             ))}
-            <NavbarMenuItem>
+            {/* <NavbarMenuItem>
               <Link to="http://stake.xinlabs.io" className={cn("w-full")} target="_blank" rel="noreferrer">
                 <Title app="Stake" />
               </Link>
-            </NavbarMenuItem>
+            </NavbarMenuItem> */}
           </div>
 
-          <div className="flex items-center gap-2 absolute bottom-5">
+          {/* <div className="flex items-center gap-2 absolute bottom-5">
             <p className="text-[8px] text-nowrap">powered by</p>
             <Link to="https://xinlabs.io" target="_blank" rel="noreferrer">
               <PoweredBy className="h-4 fill-white" />
             </Link>
-          </div>
+          </div> */}
         </NavbarMenu>
       </Navbar>
       <div
@@ -214,12 +214,12 @@ function Layout({ children }: PropsWithChildren) {
 
       <footer className="w-full flex items-center justify-center p-2 px-6 sticky bottom-0">
         <div className="w-full flex justify-between items-center">
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <p className="text-[8px] text-nowrap">powered by</p>
             <Link to="https://xinlabs.io" target="_blank" rel="noreferrer">
               <PoweredBy className="h-4 fill-white" />
             </Link>
-          </div>
+          </div> */}
           <PriorityFeesSelector />
         </div>
       </footer>

@@ -4,7 +4,7 @@ import { Helius } from "helius-sdk"
 import { PriorityFees } from "../constants"
 
 const client = new Helius(process.env.HELIUS_API_KEY!)
-const url = `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}`
+const url = `https://devnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}`
 
 async function getDigitalAssetsPage(collection: PublicKey, page: number) {
   return client.rpc.getAssetsByGroup({

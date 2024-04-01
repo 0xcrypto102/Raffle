@@ -227,7 +227,7 @@ export default function Create() {
               onChange={(e) => setName(e.target.value)}
               data-form-type="other"
             />
-            <Input
+            {/* <Input
               label="Slug"
               variant="bordered"
               value={slug}
@@ -235,7 +235,7 @@ export default function Create() {
               description={`https://raffle.xinlabs.io/${slug}`}
               errorMessage={slugError}
               data-form-type="other"
-            />
+            /> */}
           </div>
 
           <Input

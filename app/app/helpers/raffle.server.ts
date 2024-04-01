@@ -4,7 +4,7 @@ import { Raffle, IDL } from "~/types/raffle"
 import { metadata } from "~/idl/raffle.json"
 
 const programId = new anchor.web3.PublicKey(metadata.address)
-
+console.log("process.env.RPC_HOST->", process.env.RPC_HOST);
 const connection = new anchor.web3.Connection(process.env.RPC_HOST!, { commitment: "processed" })
 export function getProgram(signer: Signer) {
   const provider = new anchor.AnchorProvider(connection, signer as any, {})
